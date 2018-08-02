@@ -143,7 +143,7 @@ class Collision_Object_Container:
                 final_pos = final_pos + rotated_local_translation
 
                 local_rotation = c.quaternion
-                final_quat = T.quaternion_multiply(local_rotation, final_quat)
+                final_quat = T.quaternion_multiply(final_quat, local_rotation)
 
 
             c.update_transform(final_pos, final_quat)
