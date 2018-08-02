@@ -74,6 +74,7 @@ if __name__ == '__main__':
                              fixed_frame)
 
         marker = Marker()
+        marker.ns = "sample_idx"
         marker.type = marker.TEXT_VIEW_FACING
         marker.header.frame_id = 'common_world'
         marker.header.stamp.nsecs = now.nsecs

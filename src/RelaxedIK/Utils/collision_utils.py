@@ -228,6 +228,7 @@ class Collision_Box(Collision_Object):
 
     def make_rviz_marker(self):
         self.marker.type = self.marker.CUBE
+        self.marker.ns = self.name
         self.marker.scale.x = self.x
         self.marker.scale.y = self.y
         self.marker.scale.z = self.z
@@ -246,6 +247,7 @@ class Collision_Sphere(Collision_Object):
 
     def make_rviz_marker(self):
         self.marker.type = self.marker.SPHERE
+        self.marker.ns = self.name
         self.marker.scale.x = self.r*2
         self.marker.scale.y = self.r*2
         self.marker.scale.z = self.r*2
@@ -264,6 +266,7 @@ class Collision_Ellipsoid(Collision_Object):
 
     def make_rviz_marker(self):
         self.marker.type = self.marker.SPHERE
+        self.marker.ns = self.name
         self.marker.scale.x = self.x*2
         self.marker.scale.y = self.y*2
         self.marker.scale.z = self.z*2
@@ -283,6 +286,7 @@ class Collision_Capsule(Collision_Object):
 
     def make_rviz_marker(self):
         self.marker.type = self.marker.CYLINDER
+        self.marker.ns = self.name
         self.marker.scale.x = self.r*2
         self.marker.scale.y = self.r*2
         self.marker.scale.z = self.lz
@@ -302,6 +306,7 @@ class Collision_Cone(Collision_Object):
 
     def make_rviz_marker(self):
         self.marker.type = self.marker.CYLINDER
+        self.marker.ns = self.name
         self.marker.scale.x = self.r*2
         self.marker.scale.y = self.r*2
         self.marker.scale.z = self.lz
@@ -321,6 +326,7 @@ class Collision_Cylinder(Collision_Object):
 
     def make_rviz_marker(self):
         self.marker.type = self.marker.CYLINDER
+        self.marker.ns = self.name
         self.marker.scale.x = self.r*2
         self.marker.scale.y = self.r*2
         self.marker.scale.z = self.lz
